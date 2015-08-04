@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E2420F491B6AB53500C5AB2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2420F481B6AB53500C5AB2D /* AppDelegate.swift */; };
-		E2420F4B1B6AB53500C5AB2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2420F4A1B6AB53500C5AB2D /* ViewController.swift */; };
+		E2420F4B1B6AB53500C5AB2D /* PersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2420F4A1B6AB53500C5AB2D /* PersonTableViewController.swift */; };
 		E2420F4E1B6AB53500C5AB2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2420F4C1B6AB53500C5AB2D /* Main.storyboard */; };
 		E2420F501B6AB53500C5AB2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2420F4F1B6AB53500C5AB2D /* Images.xcassets */; };
 		E2420F531B6AB53500C5AB2D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2420F511B6AB53500C5AB2D /* LaunchScreen.xib */; };
 		E2420F5F1B6AB53500C5AB2D /* MakeSchoolYearbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2420F5E1B6AB53500C5AB2D /* MakeSchoolYearbookTests.swift */; };
+		E2420F751B6BFEDC00C5AB2D /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2420F741B6BFEDC00C5AB2D /* PersonTableViewCell.swift */; };
+		E2420F791B6C022600C5AB2D /* PostCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2420F781B6C022600C5AB2D /* PostCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		E2420F431B6AB53500C5AB2D /* MakeSchoolYearbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeSchoolYearbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2420F471B6AB53500C5AB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2420F481B6AB53500C5AB2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2420F4A1B6AB53500C5AB2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2420F4A1B6AB53500C5AB2D /* PersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewController.swift; sourceTree = "<group>"; };
 		E2420F4D1B6AB53500C5AB2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2420F4F1B6AB53500C5AB2D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E2420F521B6AB53500C5AB2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E2420F581B6AB53500C5AB2D /* MakeSchoolYearbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeSchoolYearbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2420F5D1B6AB53500C5AB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2420F5E1B6AB53500C5AB2D /* MakeSchoolYearbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSchoolYearbookTests.swift; sourceTree = "<group>"; };
+		E2420F741B6BFEDC00C5AB2D /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonTableViewCell.swift; path = Views/PersonTableViewCell.swift; sourceTree = "<group>"; };
+		E2420F781B6C022600C5AB2D /* PostCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,10 @@
 		E2420F451B6AB53500C5AB2D /* MakeSchoolYearbook */ = {
 			isa = PBXGroup;
 			children = (
+				E2420F731B6BFE2400C5AB2D /* Views */,
 				E2420F481B6AB53500C5AB2D /* AppDelegate.swift */,
-				E2420F4A1B6AB53500C5AB2D /* ViewController.swift */,
+				E2420F4A1B6AB53500C5AB2D /* PersonTableViewController.swift */,
+				E2420F781B6C022600C5AB2D /* PostCollectionViewController.swift */,
 				E2420F4C1B6AB53500C5AB2D /* Main.storyboard */,
 				E2420F4F1B6AB53500C5AB2D /* Images.xcassets */,
 				E2420F511B6AB53500C5AB2D /* LaunchScreen.xib */,
@@ -110,6 +116,14 @@
 				E2420F5D1B6AB53500C5AB2D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2420F731B6BFE2400C5AB2D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2420F741B6BFEDC00C5AB2D /* PersonTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2420F4B1B6AB53500C5AB2D /* ViewController.swift in Sources */,
+				E2420F751B6BFEDC00C5AB2D /* PersonTableViewCell.swift in Sources */,
+				E2420F4B1B6AB53500C5AB2D /* PersonTableViewController.swift in Sources */,
+				E2420F791B6C022600C5AB2D /* PostCollectionViewController.swift in Sources */,
 				E2420F491B6AB53500C5AB2D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +427,7 @@
 				E2420F641B6AB53500C5AB2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2420F651B6AB53500C5AB2D /* Build configuration list for PBXNativeTarget "MakeSchoolYearbookTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +436,7 @@
 				E2420F671B6AB53500C5AB2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
